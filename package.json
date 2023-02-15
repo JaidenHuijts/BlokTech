@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/JaidenHuijts/BlokTech/issues"
   },
-  "homepage": "https://github.com/JaidenHuijts/BlokTech#readme"
+  "homepage": "https://github.com/JaidenHuijts/BlokTech#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }
