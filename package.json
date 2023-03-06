@@ -4,7 +4,8 @@
   "description": "Jaar 2022-2023 Dit is de start van mijn readme",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -12,7 +13,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/JaidenHuijts/BlokTech/issues"
   },
@@ -21,6 +22,13 @@
     "nodemon": "^2.0.20"
   },
   "dependencies": {
-    "lodash": "^4.17.21"
+    "chalk": "^4.1.2",
+    "eslint": "^8.35.0",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.7",
+    "hbs": "^4.2.0",
+    "lodash": "^4.17.21",
+    "multer": "^1.4.5-lts.1",
+    "slug": "^8.2.2"
   }
 }
