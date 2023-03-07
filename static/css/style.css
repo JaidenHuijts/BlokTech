@@ -1,0 +1,64 @@
+*, *::before, ::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(65deg, #FF9400 65%, #ffff 35%);
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    background-color: #ffff;
+    width: 100vw;
+    justify-content: center;
+    border: solid #ffff;
+    box-shadow: 0px 6px 30px black;
+}
+
+main {
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    margin-top: 30px;
+    margin-right: 24px;
+    margin-left: 24px;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+}
+
+
+#logo {
+    height: 90px;
+    width: 90px;
+    padding: 12px;
+}
+
+#filteren {
+    text-decoration: none;
+}
+
+#filterimg {
+    height: 60px;
+    width: 50px;
+    border: solid #ffff;
+    border-radius: 15%;
+    background-color: #FF9400;
+    box-shadow: 2px 4px black;
+}
+
+h1 {
+    font-size: 5pt;
+}
+
