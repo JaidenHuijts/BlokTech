@@ -62,3 +62,21 @@ h1 {
     font-size: 5pt;
 }
 
+ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+#gebruiker {
+    border: solid 4pt black;
+    background-color: white;
+    width: 100px;
+    padding: 10px;
+    border-radius: 15%;
+}
+
+ul img {
+    height: 100px;
+    width: 100px;
+}
