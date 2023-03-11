@@ -7,53 +7,53 @@ const { filter } = require('lodash');
 
 
 const app = express();
-require('dotenv').config({path:'.env'})
-const PORT = process.env.PORT || 1337;
+// require('dotenv').config({path:'.env'})
+// const PORT = process.env.PORT || 1337;
 
-const { MongoClient, ServerApiVersion } = require('mongodb');
-const uri = process.env.DB_CONNECTION_STRING;
+// const { MongoClient, ServerApiVersion } = require('mongodb');
+// const uri = process.env.DB_CONNECTION_STRING;
 
-const client = new MongoClient(
-  uri, 
-  {useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1}
-)
+// const client = new MongoClient(
+//   uri, 
+//   {useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1}
+// )
 
-client.connect()
-.then((res) => console.log ('@@-- connection established'))
-.catch((err) => console.log ('@@--error', err))
+// client.connect()
+// .then((res) => console.log ('@@-- connection established'))
+// .catch((err) => console.log ('@@--error', err))
 
-app.listen(PORT, () => {
-  console.log(`Server listening to port: PORT`)
-});
+// app.listen(PORT, () => {
+//   console.log(`Server listening to port: PORT`)
+// });
 
-app.get('/', async (req, res) => {
-  const db = client.db('GymbuddyApp').collection('Sporters');
-  const example = await db.find({}).toArray();
-
-
-res.json({
-  succes: true,
-  message: 'connected',
-  example
-})
+// app.get('/', async (req, res) => {
+//   const db = client.db('GymbuddyApp').collection('Sporters');
+//   const example = await db.find({}).toArray();
 
 
+// res.json({
+//   succes: true,
+//   message: 'connected',
+//   example
+// })
 
-app.engine(`.hbs`, engine({
-  defaultLayout: `normalstate`,
-  layoutsDir: (__dirname + `/views/layouts`),
-  partialsDir: (__dirname + `/views/partials`),
-  extname: `.hbs`
-}));
 
-app.set(`view engine`, `.hbs`);
-app.set(`views`, `./views`);
 
-app.use(express.static(__dirname + '/static'));
-app.get("/static", (req, res) => {
-  res.render("static");
-});
-app.use(express.urlencoded({ extended: true }));
+// app.engine(`.hbs`, engine({
+//   defaultLayout: `normalstate`,
+//   layoutsDir: (__dirname + `/views/layouts`),
+//   partialsDir: (__dirname + `/views/partials`),
+//   extname: `.hbs`
+// }));
+
+// app.set(`view engine`, `.hbs`);
+// app.set(`views`, `./views`);
+
+// app.use(express.static(__dirname + '/static'));
+// app.get("/static", (req, res) => {
+//   res.render("static");
+// });
+// app.use(express.urlencoded({ extended: true }));
 
 
 
