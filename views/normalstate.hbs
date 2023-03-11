@@ -1,29 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gymbuddy</title>
+</head>
 
-<body>
- <main>
-      <a id="filteren" href="http://localhost:1337/filteropen">
-      <img id="filterimg" src="images/filter.png">
-      </a>
-
-  <ul>
-     <div>
-     <li id="gebruiker">
-        Jaiden Huijts
-        <img src="images/boy.png">
-     </li>
-      <li id="gebruiker">
-        Jazzlin Schenk
-        <img src="images/girl.png">
-     </li>
-     </div>
-      <li id="gebruiker">
-        Jesper van Driel
-        <img src="images/boy.png">
-     </li>
-  </ul> 
+<main>
+    
+<form action="/filteropen" method="POST">
 
 
+{{!-- Sportschool --}}
+<select>
+  <option value="Basic-Fit">Basic Fit</option>
+  <option value="BigGym">Big Gym</option>
+  <option value="Trainmore">Trainmore</option>
+  <option value="VondelGym">VondelGym</option>
+</select>
 
 
- </main>
-</body>
+{{!-- Geslacht --}}
+<div>
+    <label for="man">Man</label>
+    <input type="radio" name="geslacht" value="man" id="man">
+  </div>
+
+  <div>
+    <label for="vrouw">Vrouw</label>
+    <input type="radio" name="geslacht" value="vrouw" id="vrouw">
+  </div>
+
+  <input type="submit" value="Filteren">
+  
+  <div class="textoutput"></div>
+
+
+  {{!-- Leeftijd --}}
+
+{{!-- Sportniveau --}}
+
+
+
+
+
+  </form>
+
+{{!-- <ul>
+    {{#each data}}
+      <li>{{this.Naam}}
+          {{this.Leeftijd}}
+          {{this.Spiergroep}}
+          {{this.Sportschool}}
+          {{this.Sportniveau}}
+      </li>
+    {{/each}}
+</ul> --}}
+
+<div class="gymgender"></div>
+<script src="./js/script.js"></script>
+</main>

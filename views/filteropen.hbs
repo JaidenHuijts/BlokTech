@@ -1,58 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gymbuddy</title>
-    <script src="/server.js"></script>
-</head>
 
-<main>
-     <a id="filteren" href="http://localhost:1337/filteropen">
+<body>
+ <main>
+   <a id="filteren" href="http://localhost:1337/">
       <img id="filterimg" src="images/filterdicht.png">
       </a>
 
-<form>
-
-
-{{!-- Sportschool --}}
-<select>
-  <option value="Basic-Fit">Basic Fit</option>
-  <option value="BigGym">Big Gym</option>
-  <option value="Trainmore">Trainmore</option>
-  <option value="VondelGym">VondelGym</option>
-</select>
-
-
-{{!-- Geslacht --}}
-<div>
-    <label for="man">Man</label>
-    <input type="radio" name="geslacht" value="man" id="man">
-  </div>
-
-  <div>
-    <label for="vrouw">Vrouw</label>
-    <input type="radio" name="geslacht" value="vrouw" id="vrouw">
-  </div>
-
-  <button class="geslacht">Show geslacht</button>
-  
-  <div class="textoutput"></div>
-
-
-  {{!-- Leeftijd --}}
-
-{{!-- Sportniveau --}}
+  <ul>
+    {{#each data}}
+      <li>{{this.Naam}}
+          {{this.Leeftijd}}
+          {{this.Spiergroep}}
+          {{this.Sportschool}}
+          {{this.Sportniveau}}
+      </li>
+    {{/each}}
+</ul>
 
 
 
 
+ <script src="./js/script.js"></script>
 
-  </form>
-
-<ul></ul>
-
-<div class="gymgender"></div>
-
-</main>
+ </main>
+</body>

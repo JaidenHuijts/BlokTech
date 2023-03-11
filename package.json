@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/JaidenHuijts/BlokTech#readme",
   "devDependencies": {
+    "dotenv": "^16.0.3",
     "nodemon": "^2.0.20"
   },
   "dependencies": {
@@ -28,6 +29,7 @@
     "express-handlebars": "^6.0.7",
     "hbs": "^4.2.0",
     "lodash": "^4.17.21",
+    "mongodb": "^5.1.0",
     "multer": "^1.4.5-lts.1",
     "slug": "^8.2.2"
   }
