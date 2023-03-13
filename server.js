@@ -1,6 +1,5 @@
 const chalk = require('chalk');
 
-
 const path = require("path");
 const {
   engine
@@ -31,7 +30,7 @@ const PORT = process.env.PORT || 1337;
 
 //handlebars 
 app.engine(`.hbs`, engine({
-  defaultLayout: `normalstate`,
+  defaultLayout: `index`,
   layoutsDir: (__dirname + `/views/layouts`),
   partialsDir: (__dirname + `/views/partials`),
   extname: `.hbs`
@@ -72,36 +71,8 @@ app.listen(PORT, () => {
   console.log(chalk.blue(`Server listenting to port: PORT`))
 });
 
-app.get('/filteropen', async (req, res) => {
-  // logic db call -> template aanroepen -> de data meegeven aan de template ||
-  const db = client.db('GymbuddyApp').collection('Sporters');
-  const example = await db.find({}).toArray();
-  console.log('@@-- data', example);
 
-
-  res.json({
-    succes: true,
-    message: 'connected',
-    data: example,
-    layout: 'index'
-  })
-});
-
-
-
-app.post('/filteropen', function(req, res) {
-  // sla data op in db
- })
-
-
-
-
-
-//ROUTES
-// app.get('/', onHome);
-// app.get('/filteropen', filteropen);
-// // app.get('/startup', startup);
-
+//Routes
 
 app.get('/', (req, res) => {
   res.render('normalstate', {
@@ -110,12 +81,38 @@ app.get('/', (req, res) => {
 });
 
 
+app.post('/filteropen', async (req, res) => {
+  // logic db call -> template aanroepen -> de data meegeven aan de template ||
+  const db = client.db('GymbuddyApp').collection('Sporters');
+  console.log(req.body.sportniveau)
+  console.log(req.body.geslacht) //In een req.body staat formulier data die je gepost heb
+  const sporter = await db.find({Geslacht: req.body.geslacht, Sportniveau: req.body.sportniveau, Leeftijd: req.body.leeftijd, Spiergroep: req.body.spiergroep}).toArray();
+  console.log('@@-- data', sporter);
+ 
 
-// app.get('/filteropen', (req, res) => {
-//   res.render('filteropen', {
-//     layout: 'index'
-//   });
-// });
+
+  res.render('filteropen', {
+    data: sporter
+    
+    
+  });
+});
+
+   
+
+  
+
+
+  app.get('/planner', (req, res) => {
+    res.render('planner', {
+      layout: 'index'
+    });
+  });
+
+
+
+
+//API
 
 
 
