@@ -4,9 +4,11 @@
     margin: 0;
 }
 
+
 body {
     background: linear-gradient(65deg, #FF9400 65%, #ffff 35%);
     height: 100vh;
+    text-align: center;
 }
 
 header {
@@ -32,6 +34,7 @@ main {
 form {
     display: flex;
     flex-direction: column;
+   
 }
 
 div {
@@ -48,6 +51,8 @@ div {
 
 #filteren {
     text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
 }
 
 #filterimg {
@@ -60,7 +65,12 @@ div {
 }
 
 h1 {
-    font-size: 5pt;
+    font-size: 20pt;
+    margin-top: 24px;
+    background-color: white;
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 
 ul {
@@ -103,10 +113,33 @@ a {
     text-decoration: none;
 }
 
-.list {
-    display: block;
-    width: fit-content;
 
+.list li{
+   
+   color: black;
+   background-color: white;
+   width: 100%;
+   background-size: 200px;
+   border: solid 4px #FF9400;
+   border-radius: 8px;
+   text-align: center;
+   box-shadow: 8px 13px 8px black;
+   padding: 0px;
+
+
+
+
+}
+
+.list li h2 {
+    margin: 0px;
+    font-size: 20pt;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.list li p {
+    margin-top: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* Filter */
@@ -114,6 +147,7 @@ a {
 section {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
 }
 
 #submitknop {
@@ -125,4 +159,128 @@ section {
     padding: 10px;
     border: solid #ffff;
     box-shadow: 2px 4px black;
+    margin-left: 125px;
+    margin-top: 20px;
 }
+
+ [type=radio] { 
+    position: absolute;
+    opacity: 0;
+    width: 60px;
+    height: 60px;
+  } 
+  
+  /* IMAGE STYLES */
+  [type=radio] + img {
+    background-color:#ffff;
+    border: 3px solid black;
+    width: 75px;
+    height: 75px;
+    padding: 12px;
+    border-radius: 15%;
+    cursor: pointer;
+    margin-top: 12px;
+    margin-left: 5px;
+  }
+
+div [type=radio] + #star2 {
+    width: 100px;
+    height: 75px;
+  }
+ div [type=radio] + #star3 {
+    width: 130px;
+    height: 75px;
+  }
+  
+  /* CHECKED STYLES */
+div  [type=radio]:checked + img {
+    outline: 4px solid rgb(51, 240, 51);
+   
+    box-shadow: 5px 7px 5px black;
+  }
+
+form label {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 12px;
+  margin-bottom: 4px;
+  width: fit-content;
+  font-size: 15pt;
+}
+
+#age {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+/* Toevoegen */
+
+#add {
+    width: fit-content;
+    background-color: white;
+    color: #FF9400;
+    border-radius: 8px;
+    font-size: 10pt;
+    padding: 10px;
+    border: solid #FF9400;
+    box-shadow: 2px 4px black;
+    margin: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+#styleform {
+ display: flex;
+ justify-content: center;
+ flex-direction: row;
+ 
+
+}
+
+#toevoegenimg {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(51, 240, 51);
+    border: solid 2px black;
+    padding: 5px;
+    border-radius: 8px;
+}
+/* #sbs {
+    display: flex;
+    flex-direction: column;
+} */
+
+#sportschool {
+    background-color: white;
+    border: solid 2px #FF9400;
+    border-radius: 8px;
+    box-shadow: 2px 4px 5px black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15pt;
+
+}
+
+
+/* Filter resultaten */
+#resultatenlist li {
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+background-color: white;
+border: solid 4px #FF9400;
+color: black;
+width: 100%;
+border-radius: 8px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+box-shadow: 2px 4px black;
+
+}
+
+#resultatenlist li img {
+    width: 75px;
+    height: 75px;
+}
+

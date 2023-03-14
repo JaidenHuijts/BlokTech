@@ -5,11 +5,12 @@ const {
   engine
 } = require('express-handlebars');
 const {
-  filter
+  filter, update
 } = require('lodash');
 
-// //connectie
-// app.listen(1337, console.log(chalk.blue(`Running on 1337`)))
+
+
+
 
 //database
 const express = require('express');
@@ -74,8 +75,16 @@ app.listen(PORT, () => {
 
 //Routes
 
-app.get('/', (req, res) => {
-  res.render('normalstate', {
+// app.get('/', (req, res) => {
+//   res.render('normalstate', {
+//     layout: 'index'
+//   });
+// });
+
+app.get('/addgym', (req, res) => {
+  collection.insertOne(req.body);
+
+  res.render('addgym', {
     layout: 'index'
   });
 });
@@ -90,7 +99,6 @@ app.post('/filteropen', async (req, res) => {
   console.log('@@-- data', sporter);
  
 
-
   res.render('filteropen', {
     data: sporter
     
@@ -98,23 +106,46 @@ app.post('/filteropen', async (req, res) => {
   });
 });
 
+
    
 
   
 
+// Multer add
 
-  app.get('/planner', (req, res) => {
-    res.render('planner', {
-      layout: 'index'
-    });
-  });
+const GymbuddyApp = client.db('GymbuddyApp');
+const collection = GymbuddyApp.collection('Sportschool')
+
+
+const multer = require('multer');
+const upload = multer();
+
+app.get('/', async(req, res) => {
+  const db = client.db('GymbuddyApp').collection('Sportschool');   
+  const zoekSportscholen = await db.find({}).toArray();    
+  res.render('normalstate', { title: 'Gym toegevoegd', data: zoekSportscholen  });
+
+
+});
+
+// app.post('/', upload.any(), async(req, res) => {
+//   res.render('normalstate', {title: 'Gym Toegevoegd'});
+// collection.insertOne(req.body);
+// console.log(req.body);
+// })
+
+
 
 
 
 
 //API
 
-
+app.get('/planner', (req, res) => {
+  res.render('planner', {
+    layout: 'index'
+  });
+});
 
 
 

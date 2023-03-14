@@ -7,81 +7,95 @@
 
 
 {{!-- Sportschool --}}
-<label for="sportschool">Sportschool</label>
-<select name="sportschool" value="sportschool">
+<label for="sportschool">Kies een sportschool of voeg er eentje toe:</label>
+<div id="buttonenselect">
+<a id="filteren" href="http://localhost:1337/addgym">
+      <img id="toevoegenimg" src="images/toevoegen.png">
+    </a>
+<select id="sportschool" name="sportschool">
   {{>gyms}}
 </select>
+</div>
 
 
 {{!-- Geslacht --}}
-<label for="geslacht">Geslacht</label>
+<label for="geslacht">Kies een geslacht:</label>
 <section>
 <div>
-    <label for="man">Man</label>
-    <input type="radio" name="geslacht" value="Man" id="man">
+    <input type="radio" name="geslacht" value="Man" id="man" required> 
+    <img src="images/male.png">
   </div>
 
   <div>
-    <label for="vrouw">Vrouw</label>
-    <input type="radio" name="geslacht" value="Vrouw" id="vrouw">
+    <input type="radio" name="geslacht" value="Vrouw" id="vrouw" >
+    <img src="images/female.png">
   </div>
   </section>
 
  
 {{!-- Leeftijd --}}
-<label for="leeftijd">Leeftijd</label>
-<select name="leeftijd" id="leeftijd" value="Leeftijd">
-  <option>Op welke leeftijd wil je filteren?</option>
-  <option name="leeftijd" value="18">18</option>
-  <option name="leeftijd" value="19">19</option>
-  <option name="leeftijd" value="20">20</option>
-  <option name="leeftijd" value="21">21</option>
-</select>
+<label for="leeftijd">Kies een leeftijdscategorie</label>
+<section>
+ <div id="age">
+    <input type="radio" name="leeftijd" value="18 tot 30 jaar" id="Leeftijd" required>
+    <img src="images/number-18.png">
+  </div>
+
+  <div id="age">
+    <input type="radio" name="leeftijd" value="30 tot 50 jaar" id="Leeftijd">
+    <img src="images/number-30.png">
+  </div>
+  <div id="age">
+    <input type="radio" name="leeftijd" value="Boven de 50+" id="Leeftijd">
+    <img src="images/50.png">
+  </div>
+</section>
 
 
 {{!-- Sportniveau --}}
-<label for="sportniveau">Sportniveau</label>
+<label for="sportniveau">Kies een sportniveau</label>
 <section>
  <div>
-    <label for="beginner">Beginner</label>
-    <input type="radio" name="sportniveau" value="Beginner" id="Beginner">
+    <input type="radio" name="sportniveau" value="Beginner" id="Beginner" required>
+    <img src="images/star.png">
+    
   </div>
 
   <div>
-    <label for="gemiddeld">Gemiddeld</label>
     <input type="radio" name="sportniveau" value="Gemiddeld" id="Gemiddeld">
+    <img id="star2" src="images/star2.png">
   </div>
   <div>
-    <label for="gevorderd">Gevorderd</label>
     <input type="radio" name="sportniveau" value="Gevorderd" id="Gevorderd">
+    <img id="star3"src="images/star3.png">
   </div>
 </section>
 
 {{!-- Spiergroep --}}
-<label for="sportniveau">Sportniveau</label>
+<label for="spiergroep">Kies een spiergroep</label>
 <section>
  <div>
-    <label for="borst">Borst</label>
-    <input type="radio" name="spiergroep" value="Borst" id="Borst">
+    <input type="radio" name="spiergroep" value="Borst" id="Borst" required>
+    <img src="images/chest.png">
   </div>
 
   <div>
-    <label for="rug">Rug</label>
     <input type="radio" name="spiergroep" value="Rug" id="Rug">
+    <img src="images/back-pain.png">
   </div>
   <div>
-    <label for="benen">Benen</label>
     <input type="radio" name="spiergroep" value="Benen" id="Benen">
+    <img src="images/leg-3.png">
   </div>
   </section>
   <section>
   <div>
-    <label for="bicep">Bicep</label>
     <input type="radio" name="spiergroep" value="Bicep" id="Bicep">
+    <img src="images/muscle-2.png">
   </div>
   <div>
-    <label for="bicep">Tricep</label>
     <input type="radio" name="spiergroep" value="Tricep" id="Tricep">
+    <img src="images/liposuction.png">
   </div>
 </section>
 
