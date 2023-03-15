@@ -1,4 +1,6 @@
 # Gymbuddy
+![banner](https://user-images.githubusercontent.com/112852776/225437528-6d742b6c-e25a-4e2c-b955-c8bbb9d0db94.png)
+
 Welkom op mijn repo voor mijn schoolproject van Project Tech. Voor dit project moet ik 1 feature uitwerken voor mijn Gymbuddy app en die feature is filteren. Kijk gerust rond op mijn wiki voor meer informatie over dit project en de Gymbuddy app. 
 
 ![joel-beukers-ga-voor-goud-2](https://user-images.githubusercontent.com/112852776/225373214-e0fbf8dc-4fb0-4672-bfc2-8a09fc403dad.gif)
