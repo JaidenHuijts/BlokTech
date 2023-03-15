@@ -1,6 +1,7 @@
 # Gymbuddy
 Welkom op mijn repo voor mijn schoolproject van Project Tech. Voor dit project moet ik 1 feature uitwerken voor mijn Gymbuddy app en die feature is filteren. Kijk gerust rond op mijn wiki voor meer informatie over dit project en de Gymbuddy app.
 ## Beschrijving en Concept
+Mijn concept word een filter voor een Gymbuddy app. Met deze app kan je opzoek naar je ideale gym partner. Je kunt je eigen kenmerken van een gymbuddy er in verwerken zodat je je juiste match kan vinden. Nadat je deze match heb gevonden kan een afspraak maken met diegene door een datum te kiezen.
 
 ## Gebouwd met:
 * Node.js
@@ -21,7 +22,7 @@ Stap 2: Install npm in terminal
 Stap 3: NPM start in terminal
 
 ## License
-MIT
+https://github.com/JaidenHuijts/BlokTech/blob/main/License.md
 
 ## Auteur 
 Jaiden Huijts
