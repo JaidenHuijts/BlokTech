@@ -81,10 +81,10 @@ app.listen(PORT, () => {
 //   });
 // });
 
-app.get('/addgym', (req, res) => {
+app.get('/afspraak', (req, res) => {
   collection.insertOne(req.body);
 
-  res.render('addgym', {
+  res.render('afspraak', {
     layout: 'index'
   });
 });
@@ -114,7 +114,7 @@ app.post('/filteropen', async (req, res) => {
 // Multer add
 
 const GymbuddyApp = client.db('GymbuddyApp');
-const collection = GymbuddyApp.collection('Sportschool')
+const collection = GymbuddyApp.collection('Afspraken')
 
 
 const multer = require('multer');
@@ -128,11 +128,11 @@ app.get('/', async(req, res) => {
 
 });
 
-// app.post('/', upload.any(), async(req, res) => {
-//   res.render('normalstate', {title: 'Gym Toegevoegd'});
-// collection.insertOne(req.body);
-// console.log(req.body);
-// })
+app.post('/afspraakbevestigd', upload.any(), async(req, res) => {
+  res.render('afspraakbevestigd', {title: 'Afspraak gemaakt'});
+collection.insertOne(req.body);
+console.log(req.body);
+})
 
 
 
@@ -154,7 +154,7 @@ app.get('/planner', (req, res) => {
 
 //Error
 app.get('/*', (req, res) => {
-  res.json({
+  res.render('404',{
     status: 'FAILED',
     message: '404 - page not found'
   });

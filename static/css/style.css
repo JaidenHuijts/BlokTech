@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
 }
-
+/* Standaarden */
 
 body {
     background: linear-gradient(65deg, #FF9400 65%, #ffff 35%);
@@ -17,19 +17,20 @@ header {
     width: 100vw;
     justify-content: center;
     border: solid #ffff;
-    box-shadow: 0px 6px 30px black;
+    box-shadow: 0em 0.375em 1.875em black;
 }
 
 main {
     display: flex;
     justify-content: flex-end;
     text-decoration: none;
-    margin-top: 30px;
-    margin-right: 24px;
-    margin-left: 24px;
+    margin-top: 1.875em;
+    margin-right: 1.5em;
+    margin-left: 1.5em;
     flex-direction: column;
     justify-content: center;
 }
+
 
 form {
     display: flex;
@@ -37,6 +38,9 @@ form {
    
 }
 
+
+
+/* Lijsten */
 div {
     display: flex;
     flex-direction: row;
@@ -44,9 +48,9 @@ div {
 
 
 #logo {
-    height: 90px;
-    width: 90px;
-    padding: 12px;
+    height: 5.625em;
+    width: 5.625em;
+    padding: 0.75em;
 }
 
 #filteren {
@@ -56,20 +60,21 @@ div {
 }
 
 #filterimg {
-    height: 60px;
-    width: 50px;
+    height: 3.75em;
+    width: 3.125em;
     border: solid #ffff;
     border-radius: 15%;
     background-color: #FF9400;
-    box-shadow: 2px 4px black;
+    box-shadow: 0.125em 0.25em black;
 }
 
 h1 {
-    font-size: 20pt;
-    margin-top: 24px;
+    font-size: 30pt;
+    margin-top: 1.5em;
     background-color: white;
     width: 100%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 
 }
 
@@ -77,32 +82,32 @@ ul {
     display: flex;
     flex-direction: column;
     list-style-type: none;
-    margin-left: 24px;
-    margin-right: 24px;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
 }
 
 #gebruiker {
     border: solid 4pt black;
     background-color: white;
     width: 100px;
-    padding: 10px;
+    padding: 0.625em;
     border-radius: 15%;
 }
 
 ul img {
-    height: 50px;
-    width: 50px;
+    height: 3.125em;
+    width: 3.125em;
 }
 
 li { 
     border: solid 2px black;
     border-radius: 25%;
-    margin-top: 24px;
-    width: 150px;
+    margin-top: 1.5em;
+    width: 9.375em;
     background-color: black;
     color: #ffff;
     font-size: 15pt;
-    padding: 6px
+    padding: 0.375em;
 
 
 
@@ -119,12 +124,12 @@ a {
    color: black;
    background-color: white;
    width: 100%;
-   background-size: 200px;
-   border: solid 4px #FF9400;
-   border-radius: 8px;
+   background-size: 12.5em;
+   border: solid 0.25em #FF9400;
+   border-radius: 0.5em;
    text-align: center;
-   box-shadow: 8px 13px 8px black;
-   padding: 0px;
+   box-shadow: 0.5em 0.8125em 0.5em black;
+   padding: 0em;
 
 
 
@@ -132,13 +137,13 @@ a {
 }
 
 .list li h2 {
-    margin: 0px;
+    margin: 0em;
     font-size: 20pt;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .list li p {
-    margin-top: 0px;
+    margin-top: 0em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -151,58 +156,58 @@ section {
 }
 
 #submitknop {
-    width: 100px;
+    width: 5em;
     background-color: #FF9400;
     color: #ffff;
-    border-radius: 15%;
+    border-radius: 0.5em;
     font-size: 30pt;
-    padding: 10px;
+    padding: 0.625em;
     border: solid #ffff;
-    box-shadow: 2px 4px black;
-    margin-left: 125px;
-    margin-top: 20px;
+    box-shadow: 0.125em 0.25em black;
+    margin-left: 2em;
+    margin-top: 1em;
 }
 
  [type=radio] { 
     position: absolute;
     opacity: 0;
-    width: 60px;
-    height: 60px;
+    width: 3.75em;
+    height: 3.75em;
   } 
   
   /* IMAGE STYLES */
   [type=radio] + img {
     background-color:#ffff;
-    border: 3px solid black;
-    width: 75px;
-    height: 75px;
-    padding: 12px;
-    border-radius: 15%;
+    border: 0.1875em solid black;
+    width: 4.6875em;
+    height: 4.6875em;
+    padding: 0.75em;
+    border-radius: 0.5em;
     cursor: pointer;
-    margin-top: 12px;
-    margin-left: 5px;
+    margin-top: 0.5em;
+    margin-left: 0.3125em;
   }
 
 div [type=radio] + #star2 {
-    width: 100px;
-    height: 75px;
+    width: 6.25em;
+    height: 4.6875em;
   }
  div [type=radio] + #star3 {
-    width: 130px;
-    height: 75px;
+    width: 8.125em;
+    height: 4.6875em;
   }
   
   /* CHECKED STYLES */
 div  [type=radio]:checked + img {
-    outline: 4px solid rgb(51, 240, 51);
+    outline: 0.25em solid rgb(51, 240, 51);
    
-    box-shadow: 5px 7px 5px black;
+    box-shadow: 0.3125em 0.4375em 0.3125em black;
   }
 
 form label {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  margin-top: 12px;
-  margin-bottom: 4px;
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
   width: fit-content;
   font-size: 15pt;
 }
@@ -220,14 +225,14 @@ form label {
     width: fit-content;
     background-color: white;
     color: #FF9400;
-    border-radius: 8px;
+    border-radius: 0.5em;
     font-size: 10pt;
-    padding: 10px;
+    padding: 0.625em;
     border: solid #FF9400;
-    box-shadow: 2px 4px black;
-    margin: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    box-shadow: 0.125em 0.5em black;
+    margin: 1.25em;
+    padding-top: 1.25em;
+    padding-bottom: 1.25em;
     
 }
 
@@ -240,12 +245,12 @@ form label {
 }
 
 #toevoegenimg {
-    width: 40px;
-    height: 40px;
+    width: 2.5em;
+    height: 2.5em;
     background-color: rgb(51, 240, 51);
-    border: solid 2px black;
-    padding: 5px;
-    border-radius: 8px;
+    border: solid 0.125em black;
+    padding: 0.3125em;
+    border-radius: 0.5em;
 }
 /* #sbs {
     display: flex;
@@ -254,9 +259,9 @@ form label {
 
 #sportschool {
     background-color: white;
-    border: solid 2px #FF9400;
-    border-radius: 8px;
-    box-shadow: 2px 4px 5px black;
+    border: solid 0.125em #FF9400;
+    border-radius: 0.5em;
+    box-shadow: 0.125em 0.25em 0.3125em black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 15pt;
 
@@ -270,17 +275,148 @@ flex-direction: row;
 justify-content: space-evenly;
 align-items: center;
 background-color: white;
-border: solid 4px #FF9400;
+border: solid 0.25em #FF9400;
 color: black;
 width: 100%;
-border-radius: 8px;
+border-radius: 0.5em;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-box-shadow: 2px 4px black;
+box-shadow: 0.125em 0.25em black;
 
 }
 
 #resultatenlist li img {
-    width: 75px;
-    height: 75px;
+    width: 4.6875em;
+    height: 4.6875em;
 }
 
+
+/* Errorpage */
+
+#joel {
+  margin-left: 0.875em;
+  margin-right: 0.875em;
+  width: 18.75em;
+  margin-top: 12.5em;
+}
+
+/* bron: https://tenor.com/nl/view/joel-beukers-breek-de-tent-af-gif-10106743 */
+
+
+
+/* Afspraak pagina's */
+#bevestigform {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5em;
+    
+}
+
+#bevestigform div {
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+    background-color: white;
+    border: solid 0.25em #FF9400;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 0.5em;
+    margin-left: 0.875em;
+  margin-right: 0.875em;
+  box-shadow: 0.3125em 0.375em 0.3125em black;
+  
+
+}
+
+
+#add2 {
+    margin-top: 3.125em ;
+    width: fit-content;
+    background-color: #FF9400;
+    color: #ffff;
+    border-radius: 0.5em;
+    font-size: 14pt;
+    padding: 0.625em;
+    border: solid #ffff;
+    box-shadow: 0.125em 0.25em black;
+    margin-left: 6.875em;
+    margin-top: 6.875em;
+    
+
+}
+
+#pbevestig {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 0.3125em;
+    font-size: 15pt;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
+#check {
+    width: 6.25em;
+    height: 6.25em;
+    margin-top: 2.5em;
+}
+
+#home {
+    width: 3.125em;
+    height: 3.125em;
+    margin-top: 1.25em;
+}
+
+
+/* Notificatie */
+
+aside {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: fixed;
+    background-color: #FF9400;
+    border: solid 0.1875em white;
+    box-shadow: 0.3125em 0.375em 0.3125em black;
+    border-radius: 0.5em;
+    width: 85%;
+    height: 70%;
+    margin: 0em;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+aside h2 {
+    padding-top: 1.25em;
+    padding-left: 0.625em;
+    padding-right: 1.25em;
+}
+
+aside p {
+    font-size: 15pt;
+    padding: 0.625em;
+
+}
+
+aside img {
+    height: 25em;
+}
+.melding {
+    animation-name: animatie;
+    animation-duration: 8s;
+    animation-fill-mode: forwards;
+ }
+
+
+
+ @keyframes animatie {
+    0% {
+        visibility: visible;
+    }
+
+    75% {
+        visibility: visible;
+    }
+
+    100% {
+        visibility: hidden;
+    }
+ }

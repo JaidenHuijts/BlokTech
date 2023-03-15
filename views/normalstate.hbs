@@ -7,15 +7,11 @@
 
 
 {{!-- Sportschool --}}
-<label for="sportschool">Kies een sportschool of voeg er eentje toe:</label>
-<div id="buttonenselect">
-<a id="filteren" href="http://localhost:1337/addgym">
-      <img id="toevoegenimg" src="images/toevoegen.png">
-    </a>
+<label for="sportschool">Kies een sportschool:</label>
 <select id="sportschool" name="sportschool">
   {{>gyms}}
 </select>
-</div>
+
 
 
 {{!-- Geslacht --}}
@@ -106,7 +102,14 @@
 
   </form>
 
+   <aside>
+        <h2>Welkom bij de Gymbuddy app</h2>
+        <p>In deze app kan je zoeken naar jouw ideale Gymbuddy, pas het filterformulier aan naar jouw eisen en gaan met die banaan. Veel succes met het vinden van jouw Gymbuddy.
+        </p>
+        <p>Na 10 seconden gaat deze melding automatisch weg</p>
+        <img src="images/fitness13.gif">
 
+    </aside>
 <div class="gymgender"></div>
 <script src="./js/script.js"></script>
 </main>
