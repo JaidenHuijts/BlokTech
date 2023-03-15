@@ -5,6 +5,7 @@ Welkom op mijn repo voor mijn schoolproject van Project Tech. Voor dit project m
 
 ## Beschrijving en Concept
 Mijn concept word een filter voor een Gymbuddy app. Met deze app kan je opzoek naar je ideale gym partner. Je kunt je eigen kenmerken van een gymbuddy er in verwerken zodat je je juiste match kan vinden. Nadat je deze match heb gevonden kan een afspraak maken met diegene door een datum te kiezen.
+![joel-beukers-ga-voor-goud-2](https://user-images.githubusercontent.com/112852776/225438856-628149c4-4cb3-45ff-b7aa-ea044077636d.gif)
 
 
 ## Gebouwd met:
