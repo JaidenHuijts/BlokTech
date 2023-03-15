@@ -30,4 +30,8 @@ Stap 3: NPM start in terminal
 https://github.com/JaidenHuijts/BlokTech/blob/main/License.md
 
 ## Auteur 
+<<<<<<< HEAD
 Jaiden Huijts
+=======
+Jaiden Huijts
+>>>>>>> refs/remotes/origin/main
