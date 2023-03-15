@@ -9,14 +9,19 @@ Welkom op mijn repo voor mijn schoolproject van Project Tech. Voor dit project m
 
 ## Pre installatie
 * Volg deze instructies om Node.js te installeren
-[https://nodejs.org/en/download/]
+https://nodejs.org/en/download/
+* Volg deze instructies om Git te installeren
+https://github.com/git-guides/install-git
 
 ## App installatie
 Stap 1: Clone deze Repo
+
 Stap 2: Install npm in terminal
+
 Stap 3: NPM start in terminal
 
 ## License
+MIT
 
 ## Auteur 
 Jaiden Huijts
