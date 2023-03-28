@@ -1,108 +1,12 @@
+  {{>header}}
 
-<main>
-    
+  <ul id="resultatenlist">
+      {{#each data}}
+        <li><a href="filteropen/{{_id}}">{{Sportschool}}</a></li>
+      {{/each}}
+   </ul>
 
-
-<form action="/filteropen" method="POST">
-
-
-{{!-- Sportschool --}}
-<label for="sportschool">Kies een sportschool:</label>
-<select id="sportschool" name="sportschool">
-  {{>gyms}}
-</select>
-
-
-
-{{!-- Geslacht --}}
-<label for="geslacht">Kies een geslacht:</label>
-<section>
-<div>
-    <input type="radio" name="geslacht" value="Man" id="man" required> 
-    <img src="images/male.png">
-  </div>
-
-  <div>
-    <input type="radio" name="geslacht" value="Vrouw" id="vrouw" >
-    <img src="images/female.png">
-  </div>
-  </section>
-
- 
-{{!-- Leeftijd --}}
-<label for="leeftijd">Kies een leeftijdscategorie</label>
-<section>
- <div id="age">
-    <input type="radio" name="leeftijd" value="18 tot 30 jaar" id="Leeftijd" required>
-    <img src="images/number-18.png">
-  </div>
-
-  <div id="age">
-    <input type="radio" name="leeftijd" value="30 tot 50 jaar" id="Leeftijd">
-    <img src="images/number-30.png">
-  </div>
-  <div id="age">
-    <input type="radio" name="leeftijd" value="Boven de 50+" id="Leeftijd">
-    <img src="images/50.png">
-  </div>
-</section>
-
-
-{{!-- Sportniveau --}}
-<label for="sportniveau">Kies een sportniveau</label>
-<section>
- <div>
-    <input type="radio" name="sportniveau" value="Beginner" id="Beginner" required>
-    <img src="images/star.png">
-    
-  </div>
-
-  <div>
-    <input type="radio" name="sportniveau" value="Gemiddeld" id="Gemiddeld">
-    <img id="star2" src="images/star2.png">
-  </div>
-  <div>
-    <input type="radio" name="sportniveau" value="Gevorderd" id="Gevorderd">
-    <img id="star3"src="images/star3.png">
-  </div>
-</section>
-
-{{!-- Spiergroep --}}
-<label for="spiergroep">Kies een spiergroep</label>
-<section>
- <div>
-    <input type="radio" name="spiergroep" value="Borst" id="Borst" required>
-    <img src="images/chest.png">
-  </div>
-
-  <div>
-    <input type="radio" name="spiergroep" value="Rug" id="Rug">
-    <img src="images/back-pain.png">
-  </div>
-  <div>
-    <input type="radio" name="spiergroep" value="Benen" id="Benen">
-    <img src="images/leg-3.png">
-  </div>
-  </section>
-  <section>
-  <div>
-    <input type="radio" name="spiergroep" value="Bicep" id="Bicep">
-    <img src="images/muscle-2.png">
-  </div>
-  <div>
-    <input type="radio" name="spiergroep" value="Tricep" id="Tricep">
-    <img src="images/liposuction.png">
-  </div>
-</section>
-
-  <input type="submit" name="submit" value="filter" id="submitknop">
-  
-  <div class="textoutput"></div>
-
-
-  </form>
-
-   <aside>
+ <aside>
         <h2>Welkom bij de Gymbuddy app</h2>
         <p>In deze app kan je zoeken naar jouw ideale Gymbuddy, pas het filterformulier aan naar jouw eisen en gaan met die banaan. Veel succes met het vinden van jouw Gymbuddy.
         </p>
@@ -110,6 +14,7 @@
         <img src="images/fitness13.gif">
 
     </aside>
-<div class="gymgender"></div>
-<script src="./js/script.js"></script>
-</main>
+
+
+
+

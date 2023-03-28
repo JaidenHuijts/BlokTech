@@ -1,12 +1,93 @@
-<body>
+ 
+ 
+ 
+ <body>
+
+    
   <main>
-    <a id="filteren" href="http://localhost:1337/">
-      <img id="filterimg" src="images/filterdicht.png">
-    </a>
-   <ul id="resultatenlist">
-      
-       {{>resultaten}}
-   </ul>
+  
+  <form action="/resultatenlijst" method="POST">
+
+{{!--Geslacht--}}
+
+<fieldset>
+<label id="koppen" for="geslacht">Kies een geslacht:</label>
+
+   <label for="Geslacht">Man  <input type="radio" name="geslacht" value="Man" id="man" required>  </label>
+  
+    <label for="Geslacht">Vrouw  <input type="radio" name="geslacht" value="Vrouw" id="vrouw" > </label>
+ </fieldset>
+
+ 
+{{!-- Leeftijd --}}
+<fieldset>
+<label id="koppen" for="leeftijd">Kies een leeftijdscategorie</label>
+
+ 
+   <label for="Leeftijd">18 tot 30 jaar<input type="radio" name="leeftijd" value="18 tot 30 jaar" id="Leeftijd" required></label>
+    
+  
+     <label for="Leeftijd">30 tot 50 jaar     <input type="radio" name="leeftijd" value="30 tot 50 jaar" id="Leeftijd"> </label>
+  
+     <label for="Leeftijd">Boven de 50+ <input type="radio" name="leeftijd" value="Boven de 50+" id="Leeftijd"> </label>
+ </fieldset>
+
+
+{{!-- Sportniveau --}}
+<fieldset>
+<label id="koppen" for="sportniveau">Kies een sportniveau</label>
+
+
+   <label for="sportniveau">Beginner <input type="radio" name="sportniveau" value="Beginner" id="Beginner" required> </label>
+   
+
+  
+    <label for="sportniveau">Gemiddeld <input type="radio" name="sportniveau" value="Gemiddeld" id="Gemiddeld"> </label>
+  
+    <label for="sportniveau">Gevorderd   <input type="radio" name="sportniveau" value="Gevorderd" id="Gevorderd"></label>
+ </fieldset>
+
+{{!-- Spiergroep --}}
+<fieldset>
+<label id="koppen" for="spiergroep">Kies een spiergroep</label>
+
+ 
+   <label for="spiergroep">Borst <input type="radio" name="spiergroep" value="Borst" id="Borst" required></label>
+    
+ 
+
+  
+    <label for="spiergroep">Rug<input type="radio" name="spiergroep" value="Rug" id="Rug"></label>
+    
+ 
+ 
+    <label for="spiergroep">Benen <input type="radio" name="spiergroep" value="Benen" id="Benen"></label>
+  
+ 
+
+ 
+  
+    <label for="spiergroep">Bicep  <input type="radio" name="spiergroep" value="Bicep" id="Bicep"> </label>
+    
+  
+ 
+    <label for="spiergroep">Tricep  <input type="radio" name="spiergroep" value="Tricep" id="Tricep"> </label>
+   
+  </fieldset>
+
+
+  <input type="submit" name="submit" value="filter" id="submitknop">
+  
+
+
+
+  </form>
+
+  
+
+<script src="./js/script.js"></script>
+</main>
+
 
   </main>
-</body>
+</body> 

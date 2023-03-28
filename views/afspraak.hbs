@@ -1,18 +1,23 @@
 <body>
-    <h1>Wil je de afspraak bevestigen?</h1>
+    <h1>Welke afspraak wil je bevestigen bevestigen?</h1>
     <div id="bevestigform">
     
-   <div>
-   <h2>Nieuwjaarsdag</h2> 
-   <p>2023-1-1</p>
-   </div>
+   
 
 
 
     <form method="POST" action="/afspraakbevestigd" enctype="multipart/form-data">
     
-   
-    <input type="submit" name="Afspraak" value="Afspraak Bevestigen" id="add2">
+   <fieldset id="afspraakbevestiging"
+
+    <label for="Datum">   
+        <h2>Nieuwjaardag</h2> 
+        <p>2023-1-1</p>
+  
+    <input type="radio" name="afspraakdatum" value="2023-1-1" id="datum"> </label>
+    </fieldset>
+  
+    <input type="submit" name="Bevestiging" value="Afspraak Bevestigen" id="add2">
     </form>
     </div>
 </body>

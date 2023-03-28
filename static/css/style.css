@@ -168,41 +168,10 @@ section {
     margin-top: 1em;
 }
 
- [type=radio] { 
-    position: absolute;
-    opacity: 0;
-    width: 3.75em;
-    height: 3.75em;
-  } 
-  
-  /* IMAGE STYLES */
-  [type=radio] + img {
-    background-color:#ffff;
-    border: 0.1875em solid black;
-    width: 4.6875em;
-    height: 4.6875em;
-    padding: 0.75em;
-    border-radius: 0.5em;
-    cursor: pointer;
-    margin-top: 0.5em;
-    margin-left: 0.3125em;
-  }
 
-div [type=radio] + #star2 {
-    width: 6.25em;
-    height: 4.6875em;
-  }
- div [type=radio] + #star3 {
-    width: 8.125em;
-    height: 4.6875em;
-  }
   
   /* CHECKED STYLES */
-div  [type=radio]:checked + img {
-    outline: 0.25em solid rgb(51, 240, 51);
-   
-    box-shadow: 0.3125em 0.4375em 0.3125em black;
-  }
+
 
 form label {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -211,6 +180,18 @@ form label {
   width: fit-content;
   font-size: 15pt;
 }
+
+fieldset {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border: none;
+}
+
+#koppen {
+    font-size: 25pt;
+}
+
 
 #age {
     display: flex;
@@ -327,6 +308,28 @@ box-shadow: 0.125em 0.25em black;
 
 }
 
+#afspraakbevestiging {
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+    background-color: white;
+    border: solid 0.25em #FF9400;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 0.5em;
+    margin-left: 0.875em;
+  margin-right: 0.875em;
+  box-shadow: 0.3125em 0.375em 0.3125em black;
+
+}
+
+#datum {
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+}
+
+
 
 #add2 {
     margin-top: 3.125em ;
@@ -381,6 +384,9 @@ aside {
     margin: 0em;
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    animation-name: animatie;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 
 }
 
@@ -401,7 +407,7 @@ aside img {
 }
 .melding {
     animation-name: animatie;
-    animation-duration: 8s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
  }
 
