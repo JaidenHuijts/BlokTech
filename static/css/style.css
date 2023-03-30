@@ -165,7 +165,7 @@ section {
     border: solid #ffff;
     box-shadow: 0.125em 0.25em black;
     margin-left: 2em;
-    margin-top: 1em;
+    margin-top: 2em;
 }
 
 
@@ -178,26 +178,54 @@ form label {
   margin-top: 0.25em;
   margin-bottom: 0.25em;
   width: fit-content;
-  font-size: 15pt;
+  font-size: 18pt;
+  border: solid 2pt white;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 8px;
+  color: white;
+  background-color: #FF9400;
+  box-shadow: 0.125em 0.25em 0.35em black
 }
 
 fieldset {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
     border: none;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: fit-content;
+    margin-right: 50px;
+    padding-top: 20px;
+ 
 }
+
+
 
 #koppen {
-    font-size: 25pt;
+    font-size: 20pt;
+    border: none;
+    color: black;
+    background-color: transparent;
+    box-shadow: none;
 }
 
 
-#age {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
+fieldset input[type="radio"] {
+    display: none;
+    }
+
+fieldset input[type="radio"]:checked + label {
+        background-color: white;
+        color: black;
+        border: solid 2pt #FF9400;
+      }
+
+
+
+
+
+
+
 
 
 /* Toevoegen */
@@ -322,6 +350,11 @@ box-shadow: 0.125em 0.25em black;
   box-shadow: 0.3125em 0.375em 0.3125em black;
 
 }
+
+#afspraakbevestiging input[type="radio"] {
+    display: block;
+}
+
 
 #datum {
     margin-top: 1em;

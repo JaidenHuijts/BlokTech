@@ -146,20 +146,15 @@ app.get('/', async (req, res) => {
 });
 
 
-const afspraakdata = [ {
-  datum: '01/01/2023',
-  afpraaknaam: 'Nieuwjaarsdag'
-}
 
-]
 
 app.post('/afspraakbevestigd', upload.any(), async (req, res) => {;
   res.render('afspraakbevestigd', {
     title: 'Afspraak gemaakt',
-   afspraakdata
+ 
   });
-  collection.insertOne(req.body, afspraakdata);
-  console.log(req.body, afspraakdata);
+  collection.insertOne(req.body);
+  console.log(req.body);
 });
 
 
