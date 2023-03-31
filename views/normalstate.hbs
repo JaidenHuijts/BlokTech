@@ -1,12 +1,6 @@
   {{>header}}
 
-  <ul id="resultatenlist">
-      {{#each data}}
-        <li><a href="filteropen/{{_id}}">{{Sportschool}}</a></li>
-      {{/each}}
-   </ul>
-
- <aside>
+<aside>
         <h2>Welkom bij de Gymbuddy app</h2>
         <p>In deze app kan je zoeken naar jouw ideale Gymbuddy, pas het filterformulier aan naar jouw eisen en gaan met die banaan. Veel succes met het vinden van jouw Gymbuddy.
         </p>
@@ -14,6 +8,13 @@
         <img src="images/fitness13.gif">
 
     </aside>
+
+  <ul id="resultatenlist">
+      {{#each data}}
+        <li><a href="filteropen/{{_id}}">{{Sportschool}}</a></li>
+      {{/each}}
+   </ul>
+
 
 
 

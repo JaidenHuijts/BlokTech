@@ -1,8 +1,11 @@
-*, *::before, ::after {
+*,
+*::before,
+::after {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
+
 /* Standaarden */
 
 body {
@@ -35,7 +38,7 @@ main {
 form {
     display: flex;
     flex-direction: column;
-   
+
 }
 
 
@@ -99,7 +102,7 @@ ul img {
     width: 3.125em;
 }
 
-li { 
+li {
     border: solid 2px black;
     border-radius: 25%;
     margin-top: 1.5em;
@@ -111,7 +114,7 @@ li {
 
 
 
- 
+
 }
 
 a {
@@ -119,17 +122,17 @@ a {
 }
 
 
-.list li{
-   
-   color: black;
-   background-color: white;
-   width: 100%;
-   background-size: 12.5em;
-   border: solid 0.25em #FF9400;
-   border-radius: 0.5em;
-   text-align: center;
-   box-shadow: 0.5em 0.8125em 0.5em black;
-   padding: 0em;
+.list li {
+
+    color: black;
+    background-color: white;
+    width: 100%;
+    background-size: 12.5em;
+    border: solid 0.25em #FF9400;
+    border-radius: 0.5em;
+    text-align: center;
+    box-shadow: 0.5em 0.8125em 0.5em black;
+    padding: 0em;
 
 
 
@@ -169,23 +172,23 @@ section {
 }
 
 
-  
-  /* CHECKED STYLES */
+
+/* CHECKED STYLES */
 
 
 form label {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  margin-top: 0.25em;
-  margin-bottom: 0.25em;
-  width: fit-content;
-  font-size: 18pt;
-  border: solid 2pt white;
-  margin: 5px;
-  padding: 5px;
-  border-radius: 8px;
-  color: white;
-  background-color: #FF9400;
-  box-shadow: 0.125em 0.25em 0.35em black
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+    width: fit-content;
+    font-size: 18pt;
+    border: solid 2pt white;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 8px;
+    color: white;
+    background-color: #FF9400;
+    box-shadow: 0.125em 0.25em 0.35em black
 }
 
 fieldset {
@@ -196,7 +199,7 @@ fieldset {
     width: fit-content;
     margin-right: 50px;
     padding-top: 20px;
- 
+
 }
 
 
@@ -212,13 +215,13 @@ fieldset {
 
 fieldset input[type="radio"] {
     display: none;
-    }
+}
 
-fieldset input[type="radio"]:checked + label {
-        background-color: white;
-        color: black;
-        border: solid 2pt #FF9400;
-      }
+fieldset input[type="radio"]:checked+label {
+    background-color: white;
+    color: black;
+    border: solid 2pt #FF9400;
+}
 
 
 
@@ -242,14 +245,14 @@ fieldset input[type="radio"]:checked + label {
     margin: 1.25em;
     padding-top: 1.25em;
     padding-bottom: 1.25em;
-    
+
 }
 
 #styleform {
- display: flex;
- justify-content: center;
- flex-direction: row;
- 
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
 
 }
 
@@ -261,10 +264,7 @@ fieldset input[type="radio"]:checked + label {
     padding: 0.3125em;
     border-radius: 0.5em;
 }
-/* #sbs {
-    display: flex;
-    flex-direction: column;
-} */
+
 
 #sportschool {
     background-color: white;
@@ -279,17 +279,17 @@ fieldset input[type="radio"]:checked + label {
 
 /* Filter resultaten */
 #resultatenlist li {
-display: flex;
-flex-direction: row;
-justify-content: space-evenly;
-align-items: center;
-background-color: white;
-border: solid 0.25em #FF9400;
-color: black;
-width: 100%;
-border-radius: 0.5em;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-box-shadow: 0.125em 0.25em black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    border: solid 0.25em #FF9400;
+    color: black;
+    width: 100%;
+    border-radius: 0.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 0.125em 0.25em black;
 
 
 }
@@ -307,10 +307,10 @@ box-shadow: 0.125em 0.25em black;
 /* Errorpage */
 
 #joel {
-  margin-left: 0.875em;
-  margin-right: 0.875em;
-  width: 18.75em;
-  margin-top: 12.5em;
+    margin-left: 0.875em;
+    margin-right: 0.875em;
+    width: 18.75em;
+    margin-top: 12.5em;
 }
 
 /* bron: https://tenor.com/nl/view/joel-beukers-breek-de-tent-af-gif-10106743 */
@@ -322,7 +322,7 @@ box-shadow: 0.125em 0.25em black;
     display: flex;
     flex-direction: column;
     margin-top: 2.5em;
-    
+
 }
 
 #bevestigform div {
@@ -335,9 +335,9 @@ box-shadow: 0.125em 0.25em black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border-radius: 0.5em;
     margin-left: 0.875em;
-  margin-right: 0.875em;
-  box-shadow: 0.3125em 0.375em 0.3125em black;
-  
+    margin-right: 0.875em;
+    box-shadow: 0.3125em 0.375em 0.3125em black;
+
 
 }
 
@@ -351,8 +351,8 @@ box-shadow: 0.125em 0.25em black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border-radius: 0.5em;
     margin-left: 5em;
-  margin-right: 0.875em;
-  box-shadow: 0.3125em 0.375em 0.3125em black;
+    margin-right: 0.875em;
+    box-shadow: 0.3125em 0.375em 0.3125em black;
 
 }
 
@@ -360,7 +360,7 @@ box-shadow: 0.125em 0.25em black;
     display: block;
 }
 
-#afspraakbevestiging label{
+#afspraakbevestiging label {
     background-color: transparent;
     border: none;
     box-shadow: none;
@@ -377,7 +377,7 @@ box-shadow: 0.125em 0.25em black;
 
 
 #add2 {
-    margin-top: 3.125em ;
+    margin-top: 3.125em;
     width: fit-content;
     background-color: #FF9400;
     color: #ffff;
@@ -388,7 +388,7 @@ box-shadow: 0.125em 0.25em black;
     box-shadow: 0.125em 0.25em black;
     margin-left: 6em;
     margin-top: 6.875em;
-    
+
 
 }
 
@@ -430,9 +430,10 @@ aside {
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     animation-name: animatie;
-    animation-duration: 1s;
+    animation-duration: 10s;
     animation-fill-mode: forwards;
-
+    margin-left: 2em;
+    margin-top: 1.5em;
 }
 
 aside h2 {
@@ -450,15 +451,16 @@ aside p {
 aside img {
     height: 25em;
 }
+
 .melding {
     animation-name: animatie;
     animation-duration: 1s;
     animation-fill-mode: forwards;
- }
+}
 
 
 
- @keyframes animatie {
+@keyframes animatie {
     0% {
         visibility: visible;
     }
@@ -470,4 +472,4 @@ aside img {
     100% {
         visibility: hidden;
     }
- }
+}
