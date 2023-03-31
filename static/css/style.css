@@ -291,6 +291,11 @@ border-radius: 0.5em;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 box-shadow: 0.125em 0.25em black;
 
+
+}
+
+#resultatenlist li a {
+    color: black;
 }
 
 #resultatenlist li img {
@@ -345,7 +350,7 @@ box-shadow: 0.125em 0.25em black;
     color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border-radius: 0.5em;
-    margin-left: 0.875em;
+    margin-left: 5em;
   margin-right: 0.875em;
   box-shadow: 0.3125em 0.375em 0.3125em black;
 
@@ -353,6 +358,13 @@ box-shadow: 0.125em 0.25em black;
 
 #afspraakbevestiging input[type="radio"] {
     display: block;
+}
+
+#afspraakbevestiging label{
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    color: black;
 }
 
 
@@ -374,7 +386,7 @@ box-shadow: 0.125em 0.25em black;
     padding: 0.625em;
     border: solid #ffff;
     box-shadow: 0.125em 0.25em black;
-    margin-left: 6.875em;
+    margin-left: 6em;
     margin-top: 6.875em;
     
 
