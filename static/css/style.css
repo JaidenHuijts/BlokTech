@@ -204,7 +204,7 @@ fieldset {
 
 
 
-#koppen {
+.koppen {
     font-size: 20pt;
     border: none;
     color: black;
@@ -412,6 +412,14 @@ fieldset input[type="radio"]:checked+label {
     margin-top: 1.25em;
 }
 
+
+#api-error {
+    position: fixed;
+   overflow: hidden;
+   margin-top: 4em;
+   margin-left: 4em;
+   font-size: 20pt;
+}
 
 /* Notificatie */
 
