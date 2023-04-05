@@ -1,111 +1,108 @@
- 
- 
- 
  <body>
 
-    
-  <main>
-  
-  <form action="/resultatenlijst" method="POST">
 
-{{!--Geslacht--}}
+   <main>
 
-<fieldset>
-<label class="koppen" for="geslacht">Kies een geslacht:</label>
+     <form action="/resultatenlijst" method="POST">
 
-<div>
-   <input type="radio" name="geslacht" value="Man" id="man" required> 
-   <label for="man">Man</label>
-  
-    <input type="radio" name="geslacht" value="Vrouw" id="vrouw" > 
-    <label for="vrouw">Vrouw</label>
-  </div>
- </fieldset>
+       {{!--Geslacht--}}
 
- 
-{{!-- Leeftijd --}}
-<fieldset>
-<label class="koppen" for="leeftijd">Kies een leeftijdscategorie</label>
+       <fieldset>
+         <label class="koppen" for="geslacht">Kies een geslacht:</label>
 
- <div>
-   <input type="radio" name="leeftijd" value="18 tot 30 jaar" id="18-30" required>
-   <label for="18-30">18 tot 30 jaar</label>
-    
-  
-        <input type="radio" name="leeftijd" value="30 tot 50 jaar" id="30-50">
-        <label for="30-50">30 tot 50 jaar</label>
-  
-      <input type="radio" name="leeftijd" value="Boven de 50+" id="50+">
-         <label for="50+">Boven de 50+</label>
-     </div>
- </fieldset>
+         <div>
+           <input type="radio" name="geslacht" value="Man" id="man" required>
+           <label for="man">Man</label>
+
+           <input type="radio" name="geslacht" value="Vrouw" id="vrouw">
+           <label for="vrouw">Vrouw</label>
+         </div>
+       </fieldset>
 
 
-{{!-- Sportniveau --}}
-<fieldset>
-<label class="koppen" for="sportniveau">Kies een sportniveau</label>
+       {{!-- Leeftijd --}}
+       <fieldset>
+         <label class="koppen" for="leeftijd">Kies een leeftijdscategorie</label>
 
-<div>
-   <input type="radio" name="sportniveau" value="Beginner" id="Beginner" required> 
-    <label for="Beginner">Beginner </label>
-   
-
-  
-    <input type="radio" name="sportniveau" value="Gemiddeld" id="Gemiddeld"> 
-    <label for="Gemiddeld">Gemiddeld </label>
-  
-    <input type="radio" name="sportniveau" value="Gevorderd" id="Gevorderd">
-    <label for="Gevorderd">Gevorderd</label>
-    </div>
- </fieldset>
-
-{{!-- Spiergroep --}}
-<fieldset>
-<label class="koppen" for="spiergroep">Kies een spiergroep</label>
-
- <div>
-   <input type="radio" name="spiergroep" value="Borst" id="Borst" required>
-   <label for="Borst">Borst</label>
-    
- 
-
-  
-    <input type="radio" name="spiergroep" value="Rug" id="Rug">
-    <label for="Rug">Rug</label>
-    
- 
- 
-    <input type="radio" name="spiergroep" value="Benen" id="Benen">
-    <label for="Benen">Benen</label>
-  
- 
-
- 
-  
-    <input type="radio" name="spiergroep" value="Bicep" id="Bicep"> 
-     <label for="Bicep">Bicep</label>
-    
-  
-
-     <input type="radio" name="spiergroep" value="Tricep" id="Tricep"> 
-     <label for="Tricep">Tricep</label>
-    </div>
-   
-  </fieldset>
+         <div>
+           <input type="radio" name="leeftijd" value="18 tot 30 jaar" id="18-30" required>
+           <label for="18-30">18 tot 30 jaar</label>
 
 
-  <input type="submit" name="submit" value="filter" id="submitknop">
-  
+           <input type="radio" name="leeftijd" value="30 tot 50 jaar" id="30-50">
+           <label for="30-50">30 tot 50 jaar</label>
+
+           <input type="radio" name="leeftijd" value="Boven de 50+" id="50+">
+           <label for="50+">Boven de 50+</label>
+         </div>
+       </fieldset>
+
+
+       {{!-- Sportniveau --}}
+       <fieldset>
+         <label class="koppen" for="sportniveau">Kies een sportniveau</label>
+
+         <div>
+           <input type="radio" name="sportniveau" value="Beginner" id="Beginner" required>
+           <label for="Beginner">Beginner </label>
 
 
 
-  </form>
+           <input type="radio" name="sportniveau" value="Gemiddeld" id="Gemiddeld">
+           <label for="Gemiddeld">Gemiddeld </label>
 
-  
+           <input type="radio" name="sportniveau" value="Gevorderd" id="Gevorderd">
+           <label for="Gevorderd">Gevorderd</label>
+         </div>
+       </fieldset>
 
-<script src="./js/script.js"></script>
-</main>
+       {{!-- Spiergroep --}}
+       <fieldset>
+         <label class="koppen" for="spiergroep">Kies een spiergroep</label>
+
+         <div>
+           <input type="radio" name="spiergroep" value="Borst" id="Borst" required>
+           <label for="Borst">Borst</label>
 
 
-  </main>
-</body> 
+
+
+           <input type="radio" name="spiergroep" value="Rug" id="Rug">
+           <label for="Rug">Rug</label>
+
+
+
+           <input type="radio" name="spiergroep" value="Benen" id="Benen">
+           <label for="Benen">Benen</label>
+
+
+
+
+
+           <input type="radio" name="spiergroep" value="Bicep" id="Bicep">
+           <label for="Bicep">Bicep</label>
+
+
+
+           <input type="radio" name="spiergroep" value="Tricep" id="Tricep">
+           <label for="Tricep">Tricep</label>
+         </div>
+
+       </fieldset>
+
+
+       <input type="submit" name="submit" value="filter" id="submitknop">
+
+
+
+
+     </form>
+
+
+
+     <script src="./js/script.js"></script>
+   </main>
+
+
+   </main>
+ </body>

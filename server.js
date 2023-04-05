@@ -14,7 +14,14 @@ const app = express();
 
 
 
-//database
+
+
+
+
+////////////////////////////
+// Aanspreken database/////
+///////////////////////////
+
 app.use(express.urlencoded({
   extended: true
 }));
@@ -28,7 +35,15 @@ const PORT = process.env.PORT || 1337;
 
 
 
-//handlebars 
+
+
+
+
+/////////////////////////////////////////////
+///Aanspreken handlebars en static files////
+///////////////////////////////////////////
+
+
 app.engine(`.hbs`, engine({
   defaultLayout: `index`,
   layoutsDir: (__dirname + `/views/layouts`),
@@ -46,9 +61,18 @@ app.get("/static", (req, res) => {
 app.use(express.urlencoded({
   extended: true
 }));
-//
 
-//database connectie
+
+
+
+
+
+
+
+
+///////////////////////
+//database connectie //
+//////////////////////
 const {
   MongoClient,
   ServerApiVersion
@@ -72,7 +96,17 @@ app.listen(PORT, () => {
 });
 
 
-//Routes
+
+
+
+
+
+
+
+
+///////////////////////
+//Routes en feature////
+///////////////////////
 
 app.get('/afspraak', (req, res) => {
   collection.insertOne(req.body);
@@ -83,10 +117,22 @@ app.get('/afspraak', (req, res) => {
 });
 
 
+
+
+
+
+
+
+
+///////////////////
+// Filter functie//
+//////////////////
+
 app.get('/filteropen/:id', async (req, res) => {
   console.log('@@-- test', req.params.id)
   // fetch de sportschool by id
-  
+  ///Parameter zit hierzo/////
+
 
   // logic db call -> template aanroepen -> de data meegeven aan de template ||
   const db = client.db('GymbuddyApp').collection('Sporters');
@@ -109,24 +155,50 @@ app.get('/filteropen/:id', async (req, res) => {
 });
 
 
+
+
+
+
+
+
+
+
+////////////////////////////////////////////////////////
+//Filter Post naar database en renderen van resultaten//
+////////////////////////////////////////////////////////
+
 app.post('/resultatenlijst', async (req, res) => {
   // logic db call -> template aanroepen -> de data meegeven aan de template ||
   const db = client.db('GymbuddyApp').collection('Sporters');
   console.log(req.body.sportniveau)
   console.log(req.body.geslacht) //In een req.body staat formulier data die je gepost heb
-  const sporter = await db.find({Geslacht: req.body.geslacht, Sportniveau: req.body.sportniveau, Leeftijd: req.body.leeftijd, Spiergroep: req.body.spiergroep}).toArray();
+  const sporter = await db.find({
+    Geslacht: req.body.geslacht,
+    Sportniveau: req.body.sportniveau,
+    Leeftijd: req.body.leeftijd,
+    Spiergroep: req.body.spiergroep
+  }).toArray();
   console.log('@@-- data', sporter);
- 
+
 
   res.render('resultatenlijst', {
     data: sporter
-    
-    
+
+
   });
 });
 
 
-// Multer add
+
+
+
+
+
+
+
+////////////////////
+/////Multer add/////
+////////////////////
 
 const GymbuddyApp = client.db('GymbuddyApp');
 const collection = GymbuddyApp.collection('Afspraken')
@@ -134,6 +206,21 @@ const collection = GymbuddyApp.collection('Afspraken')
 
 const multer = require('multer');
 const upload = multer();
+
+
+
+
+
+
+
+
+
+
+
+
+////////////////////////////////////////////
+////Ophalen Sportscholen op normalstate/////
+////////////////////////////////////////////
 
 app.get('/', async (req, res) => {
   const db = client.db('GymbuddyApp').collection('Sportschool');
@@ -148,10 +235,21 @@ app.get('/', async (req, res) => {
 
 
 
-app.post('/afspraakbevestigd', upload.any(), async (req, res) => {;
+
+
+
+
+
+
+////////////////////////////////////////////
+///API en afspraak naar database sturen/////
+///////////////////////////////////////////
+
+app.post('/afspraakbevestigd', upload.any(), async (req, res) => {
+  ;
   res.render('afspraakbevestigd', {
     title: 'Afspraak gemaakt',
- 
+
   });
   collection.insertOne(req.body);
   console.log(req.body);
@@ -159,9 +257,6 @@ app.post('/afspraakbevestigd', upload.any(), async (req, res) => {;
 
 
 
-
-
-//API
 
 app.get('/planner', (req, res) => {
   res.render('planner', {
@@ -171,7 +266,13 @@ app.get('/planner', (req, res) => {
 
 
 
-//Error
+
+
+
+
+///////////////
+//Error 404 ///
+///////////////
 app.get('/*', (req, res) => {
   res.render('404', {
     status: 'FAILED',

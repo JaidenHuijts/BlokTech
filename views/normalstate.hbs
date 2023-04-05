@@ -1,21 +1,17 @@
   {{>header}}
 
-<aside>
-        <h2>Welkom bij de Gymbuddy app</h2>
-        <p>In deze app kan je zoeken naar jouw ideale Gymbuddy, pas het filterformulier aan naar jouw eisen en gaan met die banaan. Veel succes met het vinden van jouw Gymbuddy.
-        </p>
-        <p>Na 10 seconden gaat deze melding automatisch weg</p>
-        <img src="images/fitness13.gif">
+  <aside>
+    <h2>Welkom bij de Gymbuddy app</h2>
+    <p>In deze app kan je zoeken naar jouw ideale Gymbuddy, pas het filterformulier aan naar jouw eisen en gaan met die
+      banaan. Veel succes met het vinden van jouw Gymbuddy.
+    </p>
+    <p>Na 10 seconden gaat deze melding automatisch weg</p>
+    <img src="images/fitness13.gif">
 
-    </aside>
+  </aside>
 
   <ul id="resultatenlist">
-      {{#each data}}
-        <li><a href="filteropen/{{_id}}">{{Sportschool}}</a></li>
-      {{/each}}
-   </ul>
-
-
-
-
-
+    {{#each data}}
+    <li><a href="filteropen/{{_id}}">{{Sportschool}}</a></li>
+    {{/each}}
+  </ul>
